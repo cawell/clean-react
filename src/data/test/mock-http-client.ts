@@ -12,6 +12,6 @@ export class HttpPostClientSpy implements HttpPostClient {
     this.url = params.url
     this.body = params.body
 
-    return await Promise.resolve(this.response)
+    return this.response
   }
 }

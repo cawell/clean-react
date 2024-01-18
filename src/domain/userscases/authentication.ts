@@ -1,11 +1,10 @@
-import { AccountModel } from "@/domain/models/acount-model"
+import type { AccountModel } from '@/domain/models/acount-model'
 
 export type AuthenticationParams = {
-  email: string, 
+  email: string
   password: string
 }
 
-
 export interface Authentication {
-  auth (params: AuthenticationParams): Promise<AccountModel>
+  auth: (params: AuthenticationParams) => Promise<AccountModel>
 }

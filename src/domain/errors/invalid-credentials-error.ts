@@ -3,5 +3,4 @@ export class InvalidCredentialsError extends Error {
     super('Credenciais inválidas')
     this.name = 'InvalidCredentialsError'
   }
-
 }
